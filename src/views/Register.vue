@@ -2,10 +2,13 @@
   <div class="register">
     <h1>Register</h1>
       <form @submit.prevent="Register">
-        <input type="text" placeholder="Email" v-model="email"/>
-        <input type="password" placeholder="Password" v-model="password"/>
-        <input type="submit" value="Register"/>
-        <p>Have an account? <router-link to="/login">Login Here</router-link></p>
+        <input type="text" class="input-css" placeholder="Email" v-model="email"/>
+        <br />
+        <input type="password" class="input-css" placeholder="Password" v-model="password"/>
+        <br/>
+        <br/>
+        <input type="submit" class="register-css" value="Register"/>
+        <p :class="weight">Have an account? <router-link to="/login">Login Here</router-link></p>
       </form>
   </div>
 </template>
@@ -27,7 +30,8 @@ export default {
     return {
       Register,
       email,
-      password
+      password,
+      weight: 'weight'
     }
   }
 
@@ -35,5 +39,31 @@ export default {
 </script>
 
 <style>
-
+.weight {
+  padding: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.input-css {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 100, 156, 0.5);
+}
+.register-css{
+  width: 90px;
+  height: 30px;
+  left: 362px;
+  top: 518px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
 </style>

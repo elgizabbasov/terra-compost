@@ -1,4 +1,4 @@
-# compostvancouver
+# Terra Compost
 
 ## Project setup
 ```

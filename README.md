@@ -20,3 +20,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Try it yourself
 https://peaceful-nightingale-326268.netlify.app
+
+### Devpost
+https://devpost.com/software/compost-tracker
